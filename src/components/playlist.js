@@ -13,8 +13,8 @@ const Playlist = (props) => {
   });
 
   return (
-    <ul className="col-md-4 list-group">
-      <h3>View Videos</h3>
+    <ul className="col-md-4 ">
+      <h3>Playlist</h3>
       {playlistItems}
     </ul>
   );

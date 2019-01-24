@@ -8,7 +8,7 @@ const PlaylistItem = (props) => {
   const imageUrl = video.snippet.thumbnails.default.url;
   return(
     <li onClick={() => onVideoSelect(video)} className="list-group-item">
-      <button onClick={() => onVideoRemove(video)}>X</button>
+      <button onClick={() => onVideoRemove(video)}>Remove from Playlist</button>
       <div className="video-list media">
         <div>
           <img className="media-object" src={imageUrl} alt={video.title}/>

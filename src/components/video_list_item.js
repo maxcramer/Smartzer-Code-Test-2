@@ -10,7 +10,7 @@ class VideoListItem extends React.Component {
     };
   }
 
-  
+
   render() {
     const video = this.props.video;
     const onUserSelected = this.props.onUserSelected;
@@ -21,7 +21,7 @@ class VideoListItem extends React.Component {
 
     return (
       <li onClick={() => onUserSelected(video)} className="list-group-item">
-        <button onClick={() => addFavouriteVideo(video)}>+</button>
+        <button onClick={() => addFavouriteVideo(video)}>Add to Playlist</button>
         <div className="video-list media">
           <div className="media-left">
             <img className="media-object" src={imageUrl} alt={video.title} />
